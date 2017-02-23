@@ -122,7 +122,7 @@ GSEOptions = {
 	["saveAllMacrosLocal"] = true,
 	["filterList"] = {
 		["Spec"] = true,
-		["Class"] = true,
+		["Class"] = false,
 		["All"] = false,
 	},
 	["TitleColour"] = "|cFFFF0000",
@@ -146,11 +146,10 @@ GSEOptions = {
 	["EmphasisColour"] = "|cFFFFFF00",
 	["NUMBER"] = "|cffffaa00",
 	["WOWSHORTCUTS"] = "|cffddaaff",
-	["RealtimeParse"] = false,
+	["RealtimeParse"] = true,
 	["deleteOrphansOnLogout"] = true,
 	["useTranslator"] = false,
 	["UnfoundSpells"] = {
-		["Ebonbolt"] = true,
 	},
 	["AuthorColour"] = "|cFF00D1FF",
 	["requireTarget"] = false,
@@ -553,16 +552,16 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["KeyPress"] = {
-					},
+					["StepFunction"] = "Sequential",
 					["KeyRelease"] = {
 					},
-					["Trinket2"] = false,
+					["KeyPress"] = {
+					},
 					["Trinket1"] = false,
 					["Ring2"] = false,
 					["PreMacro"] = {
 					},
-					["StepFunction"] = "Sequential",
+					["Trinket2"] = false,
 				}, -- [1]
 			},
 		},
@@ -577,25 +576,25 @@ GSELibrary = {
 					"/cast Consecration", -- [3]
 					"/cast Holy Shock", -- [4]
 					"/cast !Divine Protection", -- [5]
-					["Trinket1"] = true,
+					["PostMacro"] = {
+						"/cast [combat] Aura Master", -- [1]
+					},
 					["Head"] = false,
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["PostMacro"] = {
-						"/cast [combat] Aura Master", -- [1]
-					},
+					["Ring2"] = false,
 					["KeyRelease"] = {
 						"/cast [combat] Avenging Wrath", -- [1]
 					},
 					["StepFunction"] = "Sequential",
-					["PreMacro"] = {
-					},
+					["StepFunciton"] = "Sequential",
 					["KeyPress"] = {
 						"/targetenemy [noharm][dead]", -- [1]
 					},
-					["StepFunciton"] = "Sequential",
-					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["Trinket1"] = true,
 				}, -- [1]
 			},
 			["Author"] = "TimothyLuke",
@@ -624,12 +623,12 @@ GSELibrary = {
 					},
 					["KeyPress"] = {
 					},
-					["StepFunction"] = "Sequential",
+					["Trinket1"] = false,
 					["Ring2"] = false,
 					["PreMacro"] = {
 						"/stopcasting", -- [1]
 					},
-					["Trinket1"] = false,
+					["StepFunction"] = "Sequential",
 				}, -- [1]
 			},
 			["SpecID"] = 66,
@@ -661,12 +660,12 @@ GSELibrary = {
 						"/cast Avenging Wrath", -- [2]
 						"/cast Shield of Vengeance", -- [3]
 					},
-					["Trinket1"] = false,
+					["StepFunction"] = "Priority",
 					["Ring2"] = false,
 					["PreMacro"] = {
 						"/startattack", -- [1]
 					},
-					["StepFunction"] = "Priority",
+					["Trinket1"] = false,
 				}, -- [1]
 			},
 			["Lang"] = "enUS",
@@ -695,13 +694,13 @@ GSELibrary = {
 					["KeyRelease"] = {
 					},
 					["StepFunction"] = "Sequential",
-					["KeyPress"] = {
-					},
+					["Trinket1"] = false,
 					["Ring2"] = false,
 					["PreMacro"] = {
 						"/stopcasting", -- [1]
 					},
-					["Trinket1"] = false,
+					["KeyPress"] = {
+					},
 				}, -- [1]
 			},
 			["SpecID"] = 66,
@@ -727,12 +726,12 @@ GSELibrary = {
 					["KeyRelease"] = {
 					},
 					["StepFunction"] = "Sequential",
-					["Trinket1"] = false,
+					["KeyPress"] = {
+					},
 					["Ring2"] = false,
 					["PreMacro"] = {
 					},
-					["KeyPress"] = {
-					},
+					["Trinket1"] = false,
 				}, -- [1]
 			},
 		},
@@ -761,13 +760,13 @@ GSELibrary = {
 						"/startattack", -- [3]
 					},
 					["StepFunction"] = "Sequential",
-					["KeyPress"] = {
-						"/targetenemy [noharm][dead]", -- [1]
-					},
+					["Trinket1"] = false,
 					["Ring2"] = false,
 					["PreMacro"] = {
 					},
-					["Trinket1"] = false,
+					["KeyPress"] = {
+						"/targetenemy [noharm][dead]", -- [1]
+					},
 				}, -- [1]
 			},
 			["Author"] = "LNPV",
@@ -789,27 +788,27 @@ GSELibrary = {
 					"/cast Eye of Tyr", -- [7]
 					"/cast [combat] Seraphim", -- [8]
 					"/cast Shield of Virtue", -- [9]
-					["PostMacro"] = {
-						"/startattack", -- [1]
-					},
+					["Trinket1"] = false,
 					["Head"] = false,
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["Trinket1"] = false,
-					["PreMacro"] = {
-					},
+					["Ring2"] = false,
+					["StepFunciton"] = "Sequential",
 					["KeyRelease"] = {
 						"/startattack", -- [1]
 					},
 					["Trinket2"] = true,
+					["StepFunction"] = "Sequential",
 					["KeyPress"] = {
 						"/targetenemy [noharm][dead]", -- [1]
 						"/startattack", -- [2]
 					},
-					["StepFunction"] = "Sequential",
-					["StepFunciton"] = "Sequential",
-					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["PostMacro"] = {
+						"/startattack", -- [1]
+					},
 				}, -- [1]
 			},
 			["Icon"] = 236264,
@@ -833,12 +832,12 @@ GSELibrary = {
 					["KeyRelease"] = {
 					},
 					["StepFunction"] = "Sequential",
-					["KeyPress"] = {
-					},
+					["Trinket1"] = false,
 					["Ring2"] = false,
 					["PreMacro"] = {
 					},
-					["Trinket1"] = false,
+					["KeyPress"] = {
+					},
 				}, -- [1]
 			},
 		},
@@ -875,12 +874,12 @@ GSELibrary = {
 						"/cast Avenging Wrath", -- [2]
 						"/cast Shield of Vengeance", -- [3]
 					},
-					["StepFunction"] = "Sequential",
+					["Trinket1"] = true,
 					["Ring2"] = false,
 					["PreMacro"] = {
 						"/startattack", -- [1]
 					},
-					["Trinket1"] = true,
+					["StepFunction"] = "Sequential",
 				}, -- [1]
 				{
 					"/cast Templar's Verdict", -- [1]
@@ -902,12 +901,12 @@ GSELibrary = {
 					["KeyPress"] = {
 						"/targetenemy [noharm][dead]", -- [1]
 					},
-					["Trinket1"] = false,
+					["StepFunction"] = "Priority",
 					["Ring2"] = false,
 					["PreMacro"] = {
 						"/startattack", -- [1]
 					},
-					["StepFunction"] = "Priority",
+					["Trinket1"] = false,
 				}, -- [2]
 			},
 		},
@@ -1339,15 +1338,180 @@ GSELibrary = {
 		},
 	}, -- [4]
 	{
-		["Disc_dot"] = {
+		["Holy"] = {
+			["Helplink"] = "",
+			["Talents"] = "?,?,?,?,?,?,?",
+			["Help"] = "",
+			["SpecID"] = 257,
+			["Author"] = "Unknown Author",
+			["MacroVersions"] = {
+				{
+					"/cast [@player,nogroup] Body and Mind", -- [1]
+					"/castsequence [@focus,exists,nodead] Body and Mind, Renew", -- [2]
+					"/castsequence [@focus,exists,nodead] Prayer of Mending, Prayer of Healing", -- [3]
+					"/cast Circle of Healing", -- [4]
+					"/cast [combat] Holy Word: Chastise", -- [5]
+					"/cast [combat] Holy Fire", -- [6]
+					"/cast [combat] Smite", -- [7]
+					["PostMacro"] = {
+					},
+					["StepFunction"] = "Sequential",
+					["KeyRelease"] = {
+						"/cast [@player] Holy Word: Sanctify", -- [1]
+						"/startattack", -- [2]
+						"/cast [combat] Fade", -- [3]
+					},
+					["PreMacro"] = {
+					},
+					["KeyPress"] = {
+						"/assist [@focus,exists,nodead]", -- [1]
+						"/targetenemy [noharm][dead]", -- [2]
+						"/castsequence [@mouseover,exists,help,nodead] Renew, Flash Heal, Heal, Heal", -- [3]
+						"/cast [@mouseover,exists,help,nodead] Light of T'uure", -- [4]
+					},
+				}, -- [1]
+			},
+			["Icon"] = "Spell_Holy_GuardianSpirit",
+			["Default"] = 1,
+		},
+		["SPriest_def"] = {
+			["Talents"] = "?,?,?,?,?,?,?",
+			["Default"] = 1,
+			["Author"] = "Dæmsoñ@Antonidas",
+			["SpecID"] = 258,
+			["Icon"] = "Spell_Shadow_ShadowWordPain",
+			["MacroVersions"] = {
+				{
+					"/cast [combat, nochanneling] Psychic Scream", -- [1]
+					"/cast [combat, nochanneling: Shadow Word: Pain][@player] Power Word: Shield", -- [2]
+					"/cast [combat, nochanneling] Dispersion", -- [3]
+					"/use Healthstone", -- [4]
+					["Trinket1"] = false,
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["StepFunction"] = "Sequential",
+					["KeyRelease"] = {
+					},
+					["Trinket2"] = false,
+					["PostMacro"] = {
+					},
+					["KeyPress"] = {
+					},
+					["PreMacro"] = {
+					},
+					["Ring2"] = false,
+				}, -- [1]
+			},
+		},
+		["DiscHeal"] = {
+			["Talents"] = " ",
+			["Default"] = 1,
+			["Author"] = "Me",
+			["SpecID"] = 256,
+			["Icon"] = "Spell_Holy_PowerWordShield",
+			["MacroVersions"] = {
+				{
+					"/castsequence [@mouseover,help,nodead][] Plea, Shadow Mend, Shadow Mend", -- [1]
+					["PostMacro"] = {
+					},
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["StepFunction"] = "Sequential",
+					["KeyRelease"] = {
+					},
+					["Trinket2"] = false,
+					["Trinket1"] = false,
+					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["KeyPress"] = {
+					},
+				}, -- [1]
+			},
+		},
+		["DiscDamage"] = {
+			["Talents"] = "x 3,2,1,1,1,3,1",
+			["Default"] = 1,
+			["Author"] = "Me",
+			["SpecID"] = 256,
+			["Icon"] = "Spell_Holy_PowerWordShield",
+			["MacroVersions"] = {
+				{
+					"/cast [nochanneling: Penance] Schism", -- [1]
+					"/castsequence [nochanneling: Penance] Power Word: Solace, Purge the Wicked, Divine Star", -- [2]
+					"/cast [nochanneling: Penance] Penance", -- [3]
+					"/cast [nochanneling: Penance] Smite", -- [4]
+					"/cast [combat][nochanneling: Penance] Power Word: Shield", -- [5]
+					["PostMacro"] = {
+					},
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["KeyRelease"] = {
+						"/startattack", -- [1]
+					},
+					["KeyPress"] = {
+						"/targetenemy [noharm][dead]", -- [1]
+					},
+					["Trinket1"] = false,
+					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["StepFunction"] = "Sequential",
+				}, -- [1]
+			},
+		},
+		["SPriest_dots"] = {
+			["Talents"] = "?,?,?,?,?,?,?",
+			["Default"] = 1,
+			["SpecID"] = 258,
+			["MacroVersions"] = {
+				{
+					"/cast [@mouseover,harm,nodead] [] Shadow Word: Pain", -- [1]
+					"/cast [@mouseover,harm,nodead] [] Vampiric Touch", -- [2]
+					"/cast [combat, nochanneling: Shadow Word: Pain][@player] Power Word: Shield", -- [3]
+					["Trinket1"] = false,
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["Trinket2"] = true,
+					["Ring2"] = false,
+					["StepFunction"] = "Sequential",
+					["PostMacro"] = {
+					},
+					["KeyPress"] = {
+						"/cast [form:0] Shadowform", -- [1]
+						"/targetenemy [noharm] [dead]", -- [2]
+					},
+					["PreMacro"] = {
+					},
+					["KeyRelease"] = {
+					},
+				}, -- [1]
+			},
+			["Icon"] = "Spell_Shadow_ShadowWordPain",
+			["Author"] = "Dæmsoñ@Antonidas",
+		},
+		["Disc_def"] = {
 			["Talents"] = "3211121",
 			["Default"] = 1,
 			["Author"] = "Dæmsõn@Draenor",
 			["SpecID"] = 256,
 			["MacroVersions"] = {
 				{
-					"/castsequence [@mouseover] Purge the Wicked", -- [1]
-					"/cast [combat][nochanneling: Penance] Power Word: Shield", -- [2]
+					"/cast [nochanneling: Penance] Psychic Scream", -- [1]
+					"/cast [combat][nochanneling: Plea] Pain Suppression", -- [2]
+					"/cast [combat][nochanneling: Plea][@player] Power Word: Shield", -- [3]
+					"/castsequence [@player] Plea, Plea, Shadow Mend", -- [4]
+					"/targetenemy [noharm][dead]", -- [5]
+					"/cast [nochanneling: Penance] Light's Wrath", -- [6]
+					"/castsequence [@player] Plea, Plea, Shadow Mend", -- [7]
 					["PostMacro"] = {
 					},
 					["Head"] = false,
@@ -1356,105 +1520,86 @@ GSELibrary = {
 					["Ring1"] = false,
 					["KeyRelease"] = {
 					},
-					["StepFunction"] = "Sequential",
 					["KeyPress"] = {
-						"/targetenemy [noharm] [dead]", -- [1]
 					},
+					["Trinket1"] = false,
 					["Ring2"] = false,
 					["PreMacro"] = {
 					},
-					["Trinket1"] = false,
+					["StepFunction"] = "Sequential",
 				}, -- [1]
 			},
 		},
-		["HP_SPriest_heal"] = {
-			["Talents"] = "1222311",
-			["Default"] = 1,
-			["Author"] = "Dæmsoñ@Antonidas",
+		["KTNHH"] = {
+			["Helplink"] = "https://wowlazymacros.com/forums/topic/gs-e-holy-priest-heal-7-0-3/page/2/",
+			["Talents"] = "3,2,3,1,1,1,3",
+			["Help"] = "Mouse over the party/raid frames for single target heals, set the tank as focus at the beginning and roll.",
 			["MacroVersions"] = {
 				{
-					"/cast Shadow Mend", -- [1]
+					"/cast [@player,nogroup] Body and Mind", -- [1]
+					"/castsequence [@focus,exists,nodead] Body and Mind, Renew", -- [2]
+					"/castsequence [@focus,exists,nodead] Prayer of Mending, Prayer of Healing", -- [3]
+					"/cast Circle of Healing", -- [4]
+					"/cast [combat] Holy Word: Chastise", -- [5]
+					"/cast [combat] Holy Fire", -- [6]
+					"/cast [combat] Smite", -- [7]
+					["PostMacro"] = {
+					},
+					["StepFunction"] = "Sequential",
+					["KeyPress"] = {
+						"/assist [@focus,exists,nodead]", -- [1]
+						"/targetenemy [noharm][dead]", -- [2]
+						"/castsequence [@mouseover,exists,help,nodead] Renew, Flash Heal, Heal, Heal", -- [3]
+						"/cast [@mouseover,exists,help,nodead] Light of T'uure", -- [4]
+					},
+					["PreMacro"] = {
+					},
+					["KeyRelease"] = {
+						"/cast [@player] Holy Word: Sanctify", -- [1]
+						"/startattack", -- [2]
+						"/cast [combat] Fade", -- [3]
+					},
+				}, -- [1]
+			},
+			["Default"] = 1,
+			["Author"] = "KillTheNoise",
+			["Icon"] = "Spell_Holy_GuardianSpirit",
+			["SpecID"] = 257,
+		},
+		["SPriest_heal"] = {
+			["Talents"] = "?,?,?,?,?,?,?",
+			["Default"] = 1,
+			["SpecID"] = 258,
+			["MacroVersions"] = {
+				{
+					"/cast [nochanneling] Shadow Mend", -- [1]
 					"/use healthstone", -- [2]
-					"/cast Power Word: Shield", -- [3]
-					"/cast Vampiric Embrace", -- [4]
-					["PostMacro"] = {
-					},
+					"/cast [combat, nochanneling: Shadow Word: Pain][@player] Power Word: Shield", -- [3]
+					"/cast [combat, nochanneling] Vampiric Embrace", -- [4]
+					["Trinket1"] = false,
 					["Head"] = false,
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["KeyRelease"] = {
-					},
+					["Ring2"] = false,
+					["StepFunction"] = "Sequential",
 					["KeyPress"] = {
 					},
-					["Trinket1"] = false,
-					["Ring2"] = false,
+					["PostMacro"] = {
+					},
 					["PreMacro"] = {
 					},
-					["StepFunction"] = "Sequential",
+					["KeyRelease"] = {
+					},
 				}, -- [1]
 			},
-			["SpecID"] = 258,
-		},
-		["HP_SPriest_def"] = {
-			["Talents"] = "1222311",
-			["Default"] = 1,
+			["Icon"] = "Spell_Shadow_ShadowWordPain",
 			["Author"] = "Dæmsoñ@Antonidas",
-			["MacroVersions"] = {
-				{
-					"/cast Psychic Scream", -- [1]
-					"/cast Power Word: Shield", -- [2]
-					"/use Healthstone", -- [3]
-					["PostMacro"] = {
-					},
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["Trinket1"] = false,
-					["KeyRelease"] = {
-					},
-					["KeyPress"] = {
-					},
-					["StepFunction"] = "Sequential",
-					["Ring2"] = false,
-					["PreMacro"] = {
-					},
-					["Trinket2"] = false,
-				}, -- [1]
-			},
-			["SpecID"] = 258,
 		},
 		["SPriest"] = {
-			["Helplink"] = "",
-			["Talents"] = "3221121",
-			["Default"] = 2,
+			["Talents"] = "?,?,?,?,?,?,?",
+			["Default"] = 1,
 			["MacroVersions"] = {
-				{
-					"/cast [nochanneling:Void Torrent] Void Eruption", -- [1]
-					"/castsequence [nochanneling:Void Torrent] Shadow Word: Death, Shadow Word: Death, Mind Blast, Mind Blast", -- [2]
-					"/castsequence [nochanneling:Void Torrent] Mind Blast, Mind Blast", -- [3]
-					"/castsequence [nochanneling:Void Torrent] Mind Flay, Mind Flay", -- [4]
-					"/castsequence [nochanneling:Void Torrent] Mind Blast, Mind Blast", -- [5]
-					"/cast [combat, nochanneling:Void Torrent] Mindbender", -- [6]
-					["Trinket1"] = false,
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["Ring2"] = false,
-					["KeyPress"] = {
-						"/cast [form:0] Shadowform", -- [1]
-						"/targetenemy [noharm] [dead]", -- [2]
-					},
-					["StepFunction"] = "Sequential",
-					["KeyRelease"] = {
-					},
-					["PreMacro"] = {
-					},
-					["PostMacro"] = {
-					},
-				}, -- [1]
 				{
 					"/cast [nochanneling:Void Torrent] Void Eruption", -- [1]
 					"/castsequence [nochanneling:Void Torrent] Shadow Word: Death, Shadow Word: Death, Mind Blast", -- [2]
@@ -1469,117 +1614,52 @@ GSELibrary = {
 					["Belt"] = false,
 					["Ring1"] = false,
 					["Ring2"] = false,
-					["KeyPress"] = {
-						"/cast [form:0] Shadowform", -- [1]
-						"/targetenemy [noharm] [dead]", -- [2]
-					},
-					["PostMacro"] = {
-					},
-					["KeyRelease"] = {
-					},
-					["PreMacro"] = {
-					},
-					["StepFunction"] = "Sequential",
-				}, -- [2]
-			},
-			["SpecID"] = 258,
-			["Author"] = "xxx",
-			["Icon"] = "Spell_Shadow_ShadowWordPain",
-			["Help"] = "test",
-		},
-		["HP_SPriest_dots"] = {
-			["Helplink"] = "xxx",
-			["Talents"] = "xxx",
-			["Help"] = "xxx",
-			["Author"] = "xxx",
-			["SpecID"] = 258,
-			["MacroVersions"] = {
-				{
-					"/castsequence [@mouseover] Shadow Word: Pain", -- [1]
-					"/castsequence [@mouseover] Vampiric Touch", -- [2]
-					"/cast power word: shield", -- [3]
-					["Trinket1"] = false,
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["KeyRelease"] = {
-					},
-					["Ring2"] = false,
 					["StepFunction"] = "Sequential",
 					["KeyPress"] = {
-						"/cast [form:0] Shadowform", -- [1]
-						"/targetenemy [noharm] [dead]", -- [2]
+						"/targetenemy [noharm] [dead]", -- [1]
 					},
 					["PostMacro"] = {
 					},
 					["PreMacro"] = {
+						"/cast [form:0] Shadowform", -- [1]
 					},
-					["Trinket2"] = true,
+					["KeyRelease"] = {
+					},
 				}, -- [1]
 			},
+			["Author"] = "Dæmsoñ@Antonidas",
 			["Icon"] = "Spell_Shadow_ShadowWordPain",
-			["Default"] = 1,
+			["SpecID"] = 258,
 		},
-		["Disc_Heal"] = {
+		["Disc_dot"] = {
 			["Talents"] = "3211121",
 			["Default"] = 1,
 			["Author"] = "Dæmsõn@Draenor",
 			["MacroVersions"] = {
 				{
-					"/cast [combat][nochanneling: Penance] Power Word: Shield", -- [1]
-					["PostMacro"] = {
-					},
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["KeyRelease"] = {
-					},
-					["StepFunction"] = "Sequential",
-					["KeyPress"] = {
-					},
-					["Ring2"] = false,
-					["PreMacro"] = {
-					},
-					["Trinket1"] = false,
-				}, -- [1]
-			},
-			["SpecID"] = 256,
-		},
-		["DiscDamage"] = {
-			["Talents"] = "x 3,2,1,1,1,3,1",
-			["Default"] = 1,
-			["Author"] = "Me",
-			["SpecID"] = 256,
-			["Icon"] = "Spell_Holy_PowerWordShield",
-			["MacroVersions"] = {
-				{
-					"/cast [nochanneling: Penance] Schism", -- [1]
-					"/castsequence [nochanneling: Penance] Power Word: Solace, Purge the Wicked, Divine Star", -- [2]
-					"/cast [nochanneling: Penance] Penance", -- [3]
-					"/cast [nochanneling: Penance] Smite", -- [4]
-					"/cast [combat][nochanneling: Penance] shadowfiend", -- [5]
-					"/cast [combat][nochanneling: Penance] Power Word: Shield", -- [6]
+					"/cast [@mouseover,harm,nodead] Purge the Wicked", -- [1]
+					"/cast [combat][nochanneling: Penance] Power Word: Shield", -- [2]
+					"/cast [nochanneling: Penance] Power Word: Radiance", -- [3]
 					["Trinket1"] = false,
 					["Head"] = false,
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["Ring2"] = false,
-					["StepFunction"] = "Sequential",
-					["KeyRelease"] = {
-						"/startattack", -- [1]
-					},
 					["PostMacro"] = {
+					},
+					["Ring2"] = false,
+					["Trinket2"] = true,
+					["StepFunction"] = "Sequential",
+					["KeyPress"] = {
+						"/targetenemy [noharm] [dead]", -- [1]
 					},
 					["PreMacro"] = {
 					},
-					["KeyPress"] = {
-						"/targetenemy [noharm][dead]", -- [1]
+					["KeyRelease"] = {
 					},
 				}, -- [1]
 			},
+			["SpecID"] = 256,
 		},
 	}, -- [5]
 	{
@@ -1826,18 +1906,18 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["Trinket2"] = false,
-					["PreMacro"] = {
+					["PostMacro"] = {
 					},
+					["StepFunciton"] = "Sequential",
 					["KeyRelease"] = {
+					},
+					["Trinket2"] = false,
+					["Ring2"] = false,
+					["StepFunction"] = "Sequential",
+					["PreMacro"] = {
 					},
 					["KeyPress"] = {
 						"/targetenemy [noharm][dead]", -- [1]
-					},
-					["StepFunction"] = "Sequential",
-					["Ring2"] = false,
-					["StepFunciton"] = "Sequential",
-					["PostMacro"] = {
 					},
 				}, -- [1]
 			},
@@ -1854,36 +1934,38 @@ GSELibrary = {
 					"/cast [nochanneling] Arcane Missiles", -- [2]
 					"/castsequence [nochanneling] charged up, Arcane Barrage, Arcane Missiles", -- [3]
 					"/cast !slow", -- [4]
-					["Trinket1"] = false,
+					["PostMacro"] = {
+					},
 					["Head"] = false,
 					["Neck"] = false,
-					["Combat"] = true,
+					["Trinket1"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["StepFunciton"] = "Sequential",
-					["Trinket2"] = false,
+					["PreMacro"] = {
+					},
+					["Ring2"] = false,
 					["KeyRelease"] = {
 						"/startattack", -- [1]
 						"/cast [combat] Arcane Power", -- [2]
 						"/cast [combat] Presence of Mind", -- [3]
 					},
-					["StepFunction"] = "Sequential",
+					["Trinket2"] = false,
 					["KeyPress"] = {
 						"/targetenemy [noharm][dead]", -- [1]
 					},
-					["Ring2"] = false,
-					["PreMacro"] = {
-					},
-					["PostMacro"] = {
-					},
+					["StepFunction"] = "Sequential",
+					["StepFunciton"] = "Sequential",
+					["Combat"] = true,
 				}, -- [1]
 			},
 			["Icon"] = "Spell_Holy_MagicalSentry",
 			["SpecID"] = 62,
 		},
 		["SAM_Ichthys_Frosty"] = {
-			["Talents"] = "",
+			["Talents"] = "Talents: 1322112 -  Works best with a 0.75 to 1.0 second  button spam",
 			["Default"] = 1,
+			["SpecID"] = 64,
+			["Icon"] = "INV_MISC_QUESTIONMARK",
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Rune of Power", -- [1]
@@ -1904,29 +1986,27 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["Trinket1"] = false,
-					["StepFunciton"] = "Sequential",
+					["Trinket2"] = false,
+					["PreMacro"] = {
+					},
 					["KeyRelease"] = {
 						"/cast [nochanneling] Ice Barrier", -- [1]
 						"/cast [nochanneling] Ice Floes", -- [2]
 						"/cast [nochanneling] Icy Veins", -- [3]
 						"/cast [nochanneling] Frozen Orb", -- [4]
 					},
-					["Trinket2"] = false,
-					["Ring2"] = false,
-					["StepFunction"] = "Sequential",
-					["PreMacro"] = {
-					},
 					["KeyPress"] = {
 						"/targetenemy [noharm][dead]", -- [1]
 						"/cast [nopet,nomod] Summon Water Elemental", -- [2]
 					},
+					["StepFunction"] = "Sequential",
+					["Ring2"] = false,
+					["StepFunciton"] = "Sequential",
+					["Trinket1"] = false,
 				}, -- [1]
 			},
-			["Icon"] = "INV_MISC_QUESTIONMARK",
-			["Author"] = "",
 			["Lang"] = "enUS",
-			["SpecID"] = 64,
+			["Author"] = "Mageichthys@Kilrogg",
 		},
 	}, -- [8]
 	{
@@ -2528,9 +2608,9 @@ GSELibrary = {
 					},
 					["KeyPress"] = {
 					},
+					["StepFunciton"] = "Sequential",
 					["PreMacro"] = {
 					},
-					["StepFunciton"] = "Sequential",
 					["KeyRelease"] = {
 					},
 				}, -- [1]
