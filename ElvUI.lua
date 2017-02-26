@@ -21,7 +21,7 @@ ElvDB = {
 	},
 	["gold"] = {
 		["Draenor"] = {
-			["Dæmsõn"] = 21619893,
+			["Dæmsõn"] = 24599906,
 			["Gdggdggd"] = 177000,
 			["Dæmsoñ"] = 92152411,
 			["Dæmson"] = 408000,
@@ -38,7 +38,7 @@ ElvDB = {
 		},
 		["Antonidas"] = {
 			["Dæmsoñ"] = 445816,
-			["Switchtarget"] = 181946218,
+			["Switchtarget"] = 209454804,
 			["Hennesey"] = 66443747,
 			["Dæmson"] = 1133069804,
 			["Dæmsõn"] = 62000,
@@ -356,21 +356,21 @@ ElvDB = {
 		["Dæmsõn - Draenor"] = {
 			["currentTutorial"] = 1,
 			["general"] = {
-				["interruptAnnounce"] = "SAY",
-				["bottomPanel"] = false,
 				["backdropfadecolor"] = {
 					["b"] = 0.054,
 					["g"] = 0.054,
 					["r"] = 0.054,
 				},
+				["bottomPanel"] = false,
+				["interruptAnnounce"] = "SAY",
+				["vendorGrays"] = true,
+				["autoRoll"] = true,
+				["autoRepair"] = "PLAYER",
 				["valuecolor"] = {
 					["b"] = 0.819,
 					["g"] = 0.513,
 					["r"] = 0.09,
 				},
-				["autoRoll"] = true,
-				["autoRepair"] = "PLAYER",
-				["vendorGrays"] = true,
 			},
 			["movers"] = {
 				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
@@ -397,8 +397,9 @@ ElvDB = {
 				["bankWidth"] = 394,
 			},
 			["hideTutorial"] = true,
-			["auras"] = {
-				["wrapAfter"] = 10,
+			["chat"] = {
+				["panelWidthRight"] = 400,
+				["panelWidth"] = 400,
 			},
 			["unitframe"] = {
 				["colors"] = {
@@ -425,12 +426,15 @@ ElvDB = {
 						},
 						["width"] = 200,
 					},
-					["pet"] = {
+					["targettarget"] = {
 						["height"] = 26,
-						["power"] = {
+						["debuffs"] = {
 							["enable"] = false,
 						},
 						["width"] = 200,
+						["power"] = {
+							["enable"] = false,
+						},
 					},
 					["target"] = {
 						["width"] = 200,
@@ -447,15 +451,12 @@ ElvDB = {
 							["width"] = 200,
 						},
 					},
-					["targettarget"] = {
+					["pet"] = {
 						["height"] = 26,
-						["debuffs"] = {
-							["enable"] = false,
-						},
-						["width"] = 200,
 						["power"] = {
 							["enable"] = false,
 						},
+						["width"] = 200,
 					},
 					["player"] = {
 						["debuffs"] = {
@@ -504,9 +505,8 @@ ElvDB = {
 				["backdropSpacingConverted"] = true,
 			},
 			["layoutSet"] = "dpsMelee",
-			["chat"] = {
-				["panelWidthRight"] = 400,
-				["panelWidth"] = 400,
+			["auras"] = {
+				["wrapAfter"] = 10,
 			},
 			["nameplates"] = {
 				["motionType"] = "OVERLAP",
@@ -1093,32 +1093,33 @@ ElvDB = {
 				["bankWidth"] = 394,
 			},
 			["hideTutorial"] = true,
-			["auras"] = {
-				["wrapAfter"] = 10,
+			["chat"] = {
+				["panelWidth"] = 400,
+				["panelWidthRight"] = 400,
 			},
 			["layoutSet"] = "dpsMelee",
 			["movers"] = {
 				["ElvUF_Raid40Mover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,432",
-				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,-100,332",
+				["ElvUF_PlayerCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,404",
 				["ElvUF_RaidMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,427",
 				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,0,38",
 				["TalkingHeadFrameMover"] = "TOP,ElvUIParent,TOP,0,-205",
 				["BossButton"] = "TOP,ElvUIParent,TOP,0,-138",
 				["ElvUF_RaidpetMover"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,736",
 				["ShiftAB"] = "TOPLEFT,ElvUIParent,BOTTOMLEFT,4,1196",
-				["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,310,332",
+				["ElvUF_FocusMover"] = "BOTTOM,ElvUIParent,BOTTOM,-317,137",
+				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,0,375",
 				["TooltipMover"] = "TOP,ElvUIParent,TOP,250,-28",
 				["ElvUIBankMover"] = "TOP,ElvUIParent,TOP,-311,-589",
-				["ElvUF_PetMover"] = "BOTTOM,ElvUIParent,BOTTOM,-100,295",
-				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,101,351",
+				["ElvUF_PetMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,538,147",
+				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,102,118",
 				["ElvUF_PartyMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,4,195",
-				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-100,351",
+				["ElvUF_PlayerMover"] = "BOTTOM,ElvUIParent,BOTTOM,-102,118",
 				["ElvUIBagMover"] = "TOP,ElvUIParent,TOP,311,-589",
-				["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,101,295",
+				["ElvUF_TargetTargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,302,190",
 			},
-			["chat"] = {
-				["panelWidth"] = 400,
-				["panelWidthRight"] = 400,
+			["auras"] = {
+				["wrapAfter"] = 10,
 			},
 			["unitframe"] = {
 				["units"] = {
@@ -1128,20 +1129,37 @@ ElvDB = {
 							["width"] = 200,
 						},
 					},
-					["pet"] = {
-						["width"] = 200,
+					["targettarget"] = {
+						["debuffs"] = {
+							["enable"] = false,
+						},
 						["power"] = {
 							["enable"] = false,
 						},
+						["width"] = 200,
 						["height"] = 26,
 					},
 					["player"] = {
+						["debuffs"] = {
+							["attachTo"] = "BUFFS",
+						},
 						["castbar"] = {
-							["width"] = 200,
+							["width"] = 395,
+						},
+						["aurabar"] = {
+							["enable"] = false,
 						},
 						["width"] = 200,
+						["buffs"] = {
+							["enable"] = true,
+							["noDuration"] = false,
+							["attachTo"] = "FRAME",
+						},
 					},
 					["target"] = {
+						["aurabar"] = {
+							["enable"] = false,
+						},
 						["castbar"] = {
 							["width"] = 200,
 						},
@@ -1153,14 +1171,11 @@ ElvDB = {
 						},
 						["width"] = 200,
 					},
-					["targettarget"] = {
-						["debuffs"] = {
-							["enable"] = false,
-						},
+					["pet"] = {
+						["width"] = 200,
 						["power"] = {
 							["enable"] = false,
 						},
-						["width"] = 200,
 						["height"] = 26,
 					},
 				},
@@ -1198,6 +1213,7 @@ ElvDB = {
 					["showGrid"] = false,
 				},
 				["bar2"] = {
+					["heightMult"] = 2,
 					["enabled"] = true,
 				},
 				["bar1"] = {
@@ -1211,6 +1227,13 @@ ElvDB = {
 			},
 			["nameplates"] = {
 				["motionType"] = "OVERLAP",
+				["units"] = {
+					["PLAYER"] = {
+						["healthbar"] = {
+							["height"] = 15,
+						},
+					},
+				},
 			},
 			["general"] = {
 				["autoRepair"] = "PLAYER",
@@ -2538,9 +2561,6 @@ ElvPrivateDB = {
 			["install_complete"] = "10.41",
 		},
 		["Switchtarget - Antonidas"] = {
-			["nameplates"] = {
-				["enable"] = false,
-			},
 			["theme"] = "default",
 			["install_complete"] = "10.41",
 		},

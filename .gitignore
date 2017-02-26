@@ -1,47 +1,33 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+*.bak
+AngryWorldQuests.lua
+Atlas.lua
+AtlasLoot.lua
+BigWigs.lua
+HandyNotes_DungeonLocations.lua
+HandyNotes.lua
+_Cursor.lua
+WorldQuestTracker.lua
+ZoneLevelInfo.lua
+WorldQuestGroupFinder.lua
+Skada.lua
+QuestSounds.lua
+Postal.lua
+MogIt.lua
+MikScrollingBattleText.lua
+Pawn.lua
+KillingBlow_Enhanced.lua
+HandyNotes_TimelessTreasures.lua
+HandyNotes_PandariaTreasures.lua
+HandyNotes_TimelessIsleChests.lua
+HandyNotes_LegionTreasures.lua
+HandyNotes_LegionRaresTreasures.lua
+GTFO.lua
+HandyNotes_DraenorTreasures.lua
+FlashTaskBar.lua
+ErrorFilter.lua
+Auctionator.lua
+Blizzard_CombatLog.lua
+DBM-Core.lua
+DBM-StatusBarTimers.lua
+DugisGuideViewerZ.lua
+WeakAuras.lua
