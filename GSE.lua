@@ -151,9 +151,9 @@ GSEOptions = {
 	["useTranslator"] = false,
 	["UnfoundSpells"] = {
 	},
-	["overflowPersonalMacros"] = true,
-	["requireTarget"] = false,
 	["AuthorColour"] = "|cFF00D1FF",
+	["requireTarget"] = false,
+	["overflowPersonalMacros"] = true,
 	["autoCreateMacroStubsClass"] = true,
 	["DefaultDisabledMacroIcon"] = "Interface\\Icons\\INV_MISC_BOOK_08",
 	["use13"] = true,
@@ -170,7 +170,6 @@ GSELibrary = {
 		["SAM_ProtWar"] = {
 			["Talents"] = "",
 			["Default"] = 1,
-			["SpecID"] = 73,
 			["MacroVersions"] = {
 				{
 					"/castsequence Devastate", -- [1]
@@ -206,14 +205,15 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["Icon"] = "Ability_Warrior_DefensiveStance",
 			["Author"] = "",
+			["Icon"] = "Ability_Warrior_DefensiveStance",
+			["SpecID"] = 73,
 		},
 		["SAM_Fury1"] = {
 			["Talents"] = "",
 			["Help"] = "Single Target",
 			["Default"] = 2,
-			["SpecID"] = 72,
+			["Author"] = "",
 			["MacroVersions"] = {
 				{
 					"/cast Rampage", -- [1]
@@ -270,7 +270,7 @@ GSELibrary = {
 					["StepFunction"] = "Priority",
 				}, -- [2]
 			},
-			["Author"] = "",
+			["SpecID"] = 72,
 		},
 		["SAM_Arms_AOE"] = {
 			["Talents"] = "2,1,3,3,2,1,2",
@@ -300,11 +300,9 @@ GSELibrary = {
 			},
 		},
 		["SAM_FuryAOE"] = {
-			["Help"] = "Fury AOE Macro.  Version 2 has Bladestorm, Dragon Roar, and Battle Cry removed to create better control. Add these to your bars and use manually.",
-			["Talents"] = "2,3,3,2,2,2,3",
 			["Default"] = 1,
-			["Author"] = "Firone - wowlazymacros.com",
-			["Mythic"] = 2,
+			["Talents"] = "2,3,3,2,2,2,3",
+			["Help"] = "Fury AOE Macro.  Version 2 has Bladestorm, Dragon Roar, and Battle Cry removed to create better control. Add these to your bars and use manually.",
 			["MacroVersions"] = {
 				{
 					"/cast [talent:7/1] Bladestorm;[talent:7/3] Dragon Roar", -- [1]
@@ -348,8 +346,10 @@ GSELibrary = {
 					},
 				}, -- [2]
 			},
-			["SpecID"] = 72,
+			["Mythic"] = 2,
 			["Raid"] = 2,
+			["Author"] = "Firone - wowlazymacros.com",
+			["SpecID"] = 72,
 		},
 		["HP_BladeFuryBuilder"] = {
 			["Helplink"] = "https://wowlazymacros.com/forums/topic/hp-pve-fury-warrior-update-for-7-1-5/",
@@ -374,9 +374,9 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 72,
-			["Icon"] = "INV_MISC_QUESTIONMARK",
 			["Author"] = "Toxicdust",
+			["Icon"] = "INV_MISC_QUESTIONMARK",
+			["SpecID"] = 72,
 		},
 		["SAM_Arms_ST"] = {
 			["Talents"] = "2,1,3,3,2,1,2",
@@ -490,16 +490,16 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 72,
-			["Icon"] = "INV_MISC_QUESTIONMARK",
 			["Author"] = "Toxicdust",
+			["Icon"] = "INV_MISC_QUESTIONMARK",
+			["SpecID"] = 72,
 		},
 		["HP_BladeFury"] = {
-			["SpecID"] = 72,
-			["Talents"] = "",
-			["Help"] = "",
-			["StepFunction"] = "Priority",
 			["Author"] = "",
+			["Talents"] = "",
+			["Default"] = 1,
+			["StepFunction"] = "Priority",
+			["SpecID"] = 72,
 			["MacroVersions"] = {
 				{
 					"/cast Bloodthirst", -- [1]
@@ -515,10 +515,10 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
+					["Ring2"] = false,
 					["KeyRelease"] = {
 						"/startattack", -- [1]
 					},
-					["Ring2"] = false,
 					["StepFunction"] = "Sequential",
 					["PreMacro"] = {
 						"/startattack", -- [1]
@@ -532,7 +532,7 @@ GSELibrary = {
 				}, -- [1]
 			},
 			["Icon"] = "INV_MISC_QUESTIONMARK",
-			["Default"] = 1,
+			["Help"] = "",
 		},
 	}, -- [1]
 	{
@@ -552,16 +552,16 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["KeyPress"] = {
-					},
+					["Trinket2"] = false,
 					["KeyRelease"] = {
 					},
-					["Trinket2"] = false,
+					["StepFunction"] = "Sequential",
 					["Trinket1"] = false,
 					["Ring2"] = false,
 					["PreMacro"] = {
 					},
-					["StepFunction"] = "Sequential",
+					["KeyPress"] = {
+					},
 				}, -- [1]
 			},
 		},
@@ -583,10 +583,10 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
+					["Ring2"] = false,
 					["KeyRelease"] = {
 						"/cast [combat] Avenging Wrath", -- [1]
 					},
-					["Ring2"] = false,
 					["StepFunction"] = "Sequential",
 					["StepFunciton"] = "Sequential",
 					["KeyPress"] = {
@@ -597,9 +597,9 @@ GSELibrary = {
 					["Trinket1"] = true,
 				}, -- [1]
 			},
-			["SpecID"] = 65,
-			["Icon"] = "Ability_Paladin_InfusionofLight",
 			["Author"] = "TimothyLuke",
+			["Icon"] = "Ability_Paladin_InfusionofLight",
+			["SpecID"] = 65,
 		},
 		["R_DEF"] = {
 			["Talents"] = "2312223",
@@ -637,10 +637,8 @@ GSELibrary = {
 			["Helplink"] = "",
 			["Talents"] = "1112111",
 			["Default"] = 1,
-			["Author"] = "TimothyLuke",
-			["Lang"] = "enUS",
 			["SpecID"] = 70,
-			["Icon"] = "INV_MISC_QUESTIONMARK",
+			["Lang"] = "enUS",
 			["MacroVersions"] = {
 				{
 					"/cast [talent:5/1] Justicar's Vengeance; [talent:5/2] Eye for an Eye", -- [1]
@@ -672,74 +670,8 @@ GSELibrary = {
 					["Trinket1"] = false,
 				}, -- [1]
 			},
-		},
-		["SAM_Prot_AOE"] = {
-			["Talents"] = "Talents: 3332123",
-			["Default"] = 1,
-			["Author"] = "LNPV",
-			["SpecID"] = 66,
-			["Icon"] = 236264,
-			["MacroVersions"] = {
-				{
-					"/cast Avenger's Shield", -- [1]
-					"/cast Judgment", -- [2]
-					"/cast Blessed Hammer", -- [3]
-					"/cast Hammer of the Righteous", -- [4]
-					"/cast Consecration", -- [5]
-					"/cast Light of the Protector", -- [6]
-					"/cast Shield of the Righteous", -- [7]
-					"/cast Blinding Light", -- [8]
-					["PostMacro"] = {
-					},
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["KeyRelease"] = {
-						"/cast Avenging Wrath", -- [1]
-						"/cast Eye of Tyr", -- [2]
-						"/startattack", -- [3]
-					},
-					["StepFunction"] = "Sequential",
-					["Trinket1"] = false,
-					["Ring2"] = false,
-					["PreMacro"] = {
-					},
-					["KeyPress"] = {
-						"/targetenemy [noharm][dead]", -- [1]
-					},
-				}, -- [1]
-			},
-		},
-		["P_DEF"] = {
-			["Talents"] = "2312223",
-			["Default"] = 1,
-			["Author"] = "Dæmsoñ@Draenor",
-			["SpecID"] = 66,
-			["MacroVersions"] = {
-				{
-					"/cast Ardent Defender", -- [1]
-					"/cast Blessing of Protection", -- [2]
-					"/cast Guardian of Ancient Kings", -- [3]
-					"/cast Blessing of Freedom", -- [4]
-					"/use healthstone", -- [5]
-					["PostMacro"] = {
-					},
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["KeyRelease"] = {
-					},
-					["StepFunction"] = "Sequential",
-					["KeyPress"] = {
-					},
-					["Ring2"] = false,
-					["PreMacro"] = {
-					},
-					["Trinket1"] = false,
-				}, -- [1]
-			},
+			["Icon"] = "INV_MISC_QUESTIONMARK",
+			["Author"] = "TimothyLuke",
 		},
 		["R_0_INT"] = {
 			["Talents"] = "2312223",
@@ -773,9 +705,80 @@ GSELibrary = {
 			},
 			["SpecID"] = 66,
 		},
+		["P_DEF"] = {
+			["Talents"] = "2312223",
+			["Default"] = 1,
+			["Author"] = "Dæmsoñ@Draenor",
+			["SpecID"] = 66,
+			["MacroVersions"] = {
+				{
+					"/cast Ardent Defender", -- [1]
+					"/cast Blessing of Protection", -- [2]
+					"/cast Guardian of Ancient Kings", -- [3]
+					"/cast Blessing of Freedom", -- [4]
+					"/use healthstone", -- [5]
+					["PostMacro"] = {
+					},
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Sequential",
+					["KeyPress"] = {
+					},
+					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["Trinket1"] = false,
+				}, -- [1]
+			},
+		},
+		["SAM_Prot_AOE"] = {
+			["Talents"] = "Talents: 3332123",
+			["Default"] = 1,
+			["SpecID"] = 66,
+			["MacroVersions"] = {
+				{
+					"/cast Avenger's Shield", -- [1]
+					"/cast Judgment", -- [2]
+					"/cast Blessed Hammer", -- [3]
+					"/cast Hammer of the Righteous", -- [4]
+					"/cast Consecration", -- [5]
+					"/cast Light of the Protector", -- [6]
+					"/cast Shield of the Righteous", -- [7]
+					"/cast Blinding Light", -- [8]
+					["PostMacro"] = {
+					},
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["KeyRelease"] = {
+						"/cast Avenging Wrath", -- [1]
+						"/cast Eye of Tyr", -- [2]
+						"/startattack", -- [3]
+					},
+					["StepFunction"] = "Sequential",
+					["Trinket1"] = false,
+					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["KeyPress"] = {
+						"/targetenemy [noharm][dead]", -- [1]
+					},
+				}, -- [1]
+			},
+			["Icon"] = 236264,
+			["Author"] = "LNPV",
+		},
 		["SAM_Prot_ST"] = {
 			["Talents"] = "",
 			["Default"] = 1,
+			["SpecID"] = 66,
+			["Author"] = "",
+			["Icon"] = 236264,
 			["MacroVersions"] = {
 				{
 					"/cast Avenger's Shield", -- [1]
@@ -792,11 +795,11 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
+					["Ring2"] = false,
+					["StepFunciton"] = "Sequential",
 					["KeyRelease"] = {
 						"/startattack", -- [1]
 					},
-					["StepFunciton"] = "Sequential",
-					["Ring2"] = false,
 					["Trinket2"] = true,
 					["StepFunction"] = "Sequential",
 					["KeyPress"] = {
@@ -810,9 +813,33 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
+		},
+		["R_HEAL"] = {
+			["Talents"] = "2312223",
+			["Default"] = 1,
+			["Author"] = "Dæmsoñ@Draenor",
 			["SpecID"] = 66,
-			["Icon"] = 236264,
-			["Author"] = "",
+			["MacroVersions"] = {
+				{
+					"/cast Flash of Light", -- [1]
+					"/use Healthstone", -- [2]
+					["PostMacro"] = {
+					},
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Sequential",
+					["Trinket1"] = false,
+					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["KeyPress"] = {
+					},
+				}, -- [1]
+			},
 		},
 		["SAM_Ret"] = {
 			["Helplink"] = "",
@@ -883,38 +910,14 @@ GSELibrary = {
 				}, -- [2]
 			},
 		},
-		["R_HEAL"] = {
-			["Talents"] = "2312223",
-			["Default"] = 1,
-			["Author"] = "Dæmsoñ@Draenor",
-			["SpecID"] = 66,
-			["MacroVersions"] = {
-				{
-					"/cast Flash of Light", -- [1]
-					"/use Healthstone", -- [2]
-					["PostMacro"] = {
-					},
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["KeyRelease"] = {
-					},
-					["StepFunction"] = "Sequential",
-					["Trinket1"] = false,
-					["Ring2"] = false,
-					["PreMacro"] = {
-					},
-					["KeyPress"] = {
-					},
-				}, -- [1]
-			},
-		},
 	}, -- [2]
 	{
 		["HP_BM1"] = {
 			["Talents"] = "3,2,2,2,3,2,1",
 			["Help"] = "With Barrage - Talent: 3222321",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Bestial Wrath", -- [1]
@@ -933,26 +936,26 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_lookdead"] = {
 			["Talents"] = "3,2,1,2,2,2,3",
 			["Help"] = "Look Dead - Talent: 3222321",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Feign Death", -- [1]
 					"/cast [nochanneling] Play Dead", -- [2]
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_SBMmain"] = {
 			["Talents"] = "3,2,1,2,3,3,3",
 			["Help"] = "Solo main - Talent: 3212333",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Bestial Wrath", -- [1]
@@ -974,13 +977,13 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_BMburst"] = {
 			["Talents"] = "3,2,1,2,2,2,3",
 			["Help"] = "BMAoE - Talent: 3222321",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Bestial Wrath", -- [1]
@@ -1000,14 +1003,14 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_RBMAoE"] = {
 			["Talents"] = "3,2,1,2,2,3,3",
 			["Help"] = "Raiding AoE - Talent: 3212233",
 			["StepFunction"] = "Priority",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Bestial Wrath", -- [1]
@@ -1030,13 +1033,13 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_SAoE"] = {
 			["Talents"] = "3,2,1,2,2,2,3",
 			["Help"] = "Raiding AoE - Talent: 3212233",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Bestial Wrath", -- [1]
@@ -1057,13 +1060,13 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_Healpet"] = {
 			["Talents"] = "3,2,1,2,2,2,3",
 			["Help"] = "Pet Heal - Talent: 3222321",
+			["SpecID"] = 253,
+			["Author"] = "Sir-Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [@pet,dead]Revive Pet", -- [1]
@@ -1071,13 +1074,13 @@ GSELibrary = {
 					"/cast [nochanneling] Exhilaration", -- [3]
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir-Ewing",
 		},
 		["HP_2RBMAoE"] = {
 			["Talents"] = "3,2,1,2,2,2,3",
 			["Help"] = "2nd Raiding AoE with Barrage- Talent: 3212223",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Bestial Wrath", -- [1]
@@ -1099,13 +1102,13 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_2RSBM"] = {
 			["Talents"] = "3,2,1,2,2,2,3",
 			["Help"] = "2nd Raiding Single without Barrage- Talent: 3212223",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Bestial Wrath", -- [1]
@@ -1127,13 +1130,13 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_RBMmain"] = {
 			["Talents"] = "3,2,1,2,2,2,3",
 			["Help"] = "Raiding main With Barrage- Talent: 3212223",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Bestial Wrath", -- [1]
@@ -1156,13 +1159,13 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_OShit"] = {
 			["Talents"] = "3,2,1,2,2,2,3",
 			["Help"] = "Oh Shit - Talent: 3222321",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast Aspect of the Turtle", -- [1]
@@ -1172,13 +1175,13 @@ GSELibrary = {
 					"/use Healing Tonic", -- [5]
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 		["HP_BM2"] = {
 			["Talents"] = "3,2,2,2,3,2,1",
 			["Help"] = "Without Barrage - Talent: 3222321",
+			["SpecID"] = 253,
+			["Author"] = "Sir_Ewing",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Bestial Wrath", -- [1]
@@ -1201,15 +1204,15 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 253,
-			["Default"] = 1,
-			["Author"] = "Sir_Ewing",
 		},
 	}, -- [3]
 	{
 		["SAM_CalliynOutlaw"] = {
 			["Talents"] = "1,3,3,3,1,3,1",
 			["Default"] = 2,
+			["SpecID"] = 260,
+			["Author"] = "Unknown Author",
+			["Icon"] = "INV_Sword_30",
 			["MacroVersions"] = {
 				{
 					"/castsequence !Ghostly Strike", -- [1]
@@ -1269,16 +1272,11 @@ GSELibrary = {
 					["Trinket1"] = false,
 				}, -- [2]
 			},
-			["SpecID"] = 260,
-			["Icon"] = "INV_Sword_30",
-			["Author"] = "Unknown Author",
 		},
 		["SAM_Assassin"] = {
 			["Talents"] = "3,1,1,3,2,3,1",
 			["Default"] = 1,
-			["Author"] = "TimothyLuke",
 			["SpecID"] = 259,
-			["Icon"] = "Ability_Rogue_DeadlyBrew",
 			["MacroVersions"] = {
 				{
 					"/cast [@focus] Tricks of the Trade", -- [1]
@@ -1303,10 +1301,15 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
+			["Icon"] = "Ability_Rogue_DeadlyBrew",
+			["Author"] = "TimothyLuke",
 		},
 		["SAM_Subtle"] = {
 			["Talents"] = "1,2,3,3,2,1,2",
 			["Default"] = 1,
+			["Author"] = "TimothyLuke",
+			["SpecID"] = 261,
+			["Icon"] = "Ability_Stealth",
 			["MacroVersions"] = {
 				{
 					"/cast Symbols of Death", -- [1]
@@ -1332,9 +1335,6 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["Author"] = "TimothyLuke",
-			["Icon"] = "Ability_Stealth",
-			["SpecID"] = 261,
 		},
 	}, -- [4]
 	{
@@ -1342,8 +1342,8 @@ GSELibrary = {
 			["Helplink"] = "",
 			["Talents"] = "?,?,?,?,?,?,?",
 			["Help"] = "",
-			["Author"] = "Unknown Author",
 			["SpecID"] = 257,
+			["Author"] = "Unknown Author",
 			["MacroVersions"] = {
 				{
 					"/castsequence [nochanneling: Holy Fire] Holy Fire, Divine Star, Holy Word: Chastise, Smite", -- [1]
@@ -1379,7 +1379,6 @@ GSELibrary = {
 		["SPriest_def"] = {
 			["Talents"] = "?,?,?,?,?,?,?",
 			["Default"] = 1,
-			["SpecID"] = 258,
 			["MacroVersions"] = {
 				{
 					"/cast [combat, nochanneling] Psychic Scream", -- [1]
@@ -1391,82 +1390,22 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["StepFunction"] = "Sequential",
-					["KeyRelease"] = {
-					},
 					["Trinket2"] = false,
+					["Ring2"] = false,
+					["StepFunction"] = "Sequential",
 					["PostMacro"] = {
 					},
 					["KeyPress"] = {
 					},
 					["PreMacro"] = {
 					},
-					["Ring2"] = false,
+					["KeyRelease"] = {
+					},
 				}, -- [1]
 			},
-			["Icon"] = "Spell_Shadow_ShadowWordPain",
 			["Author"] = "Dæmsoñ@Antonidas",
-		},
-		["Disc_dot"] = {
-			["Talents"] = "3211121",
-			["Default"] = 1,
-			["Author"] = "Dæmsõn@Draenor",
-			["MacroVersions"] = {
-				{
-					"/cast [@mouseover,harm,nodead] Purge the Wicked", -- [1]
-					"/cast [combat][nochanneling: Penance] Power Word: Shield", -- [2]
-					"/cast [nochanneling: Penance] Power Word: Radiance", -- [3]
-					["PostMacro"] = {
-					},
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["Trinket1"] = false,
-					["Ring2"] = false,
-					["Trinket2"] = true,
-					["StepFunction"] = "Sequential",
-					["KeyPress"] = {
-						"/targetenemy [noharm] [dead]", -- [1]
-					},
-					["PreMacro"] = {
-					},
-					["KeyRelease"] = {
-					},
-				}, -- [1]
-			},
-			["SpecID"] = 256,
-		},
-		["Holy_heal"] = {
-			["Talents"] = "3221122",
-			["Default"] = 1,
-			["Author"] = "Dæmsõn@Draenor",
-			["SpecID"] = 257,
-			["MacroVersions"] = {
-				{
-					"/castsequence [@mouseover,exists,help,nodead][] Renew, Flash Heal, Heal, Heal", -- [1]
-					"/cast [@mouseover,exists,help,nodead] Renew", -- [2]
-					"/cast [@mouseover,exists,help,nodead] Flash Heal", -- [3]
-					"/cast [@mouseover,exists,help,nodead] Heal", -- [4]
-					"/cast [@mouseover,exists,help,nodead] Circle of Healing", -- [5]
-					"/cast [@player] Body and Mind", -- [6]
-					["PostMacro"] = {
-					},
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["KeyRelease"] = {
-					},
-					["KeyPress"] = {
-					},
-					["Trinket1"] = false,
-					["Ring2"] = false,
-					["PreMacro"] = {
-					},
-					["StepFunction"] = "Sequential",
-				}, -- [1]
-			},
+			["Icon"] = "Spell_Shadow_ShadowWordPain",
+			["SpecID"] = 258,
 		},
 		["Holy_aoe"] = {
 			["Talents"] = "3221122",
@@ -1501,9 +1440,7 @@ GSELibrary = {
 		["SPriest"] = {
 			["Talents"] = "?,?,?,?,?,?,?",
 			["Default"] = 1,
-			["Author"] = "Dæmsoñ@Antonidas",
 			["SpecID"] = 258,
-			["Icon"] = "Spell_Shadow_ShadowWordPain",
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling:Void Torrent] Void Eruption", -- [1]
@@ -1533,10 +1470,75 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
+			["Icon"] = "Spell_Shadow_ShadowWordPain",
+			["Author"] = "Dæmsoñ@Antonidas",
+		},
+		["DiscHeal"] = {
+			["Talents"] = " ",
+			["Default"] = 1,
+			["SpecID"] = 256,
+			["MacroVersions"] = {
+				{
+					"/castsequence [@mouseover,help,nodead][@player] Plea, Shadow Mend, Shadow Mend", -- [1]
+					"/castsequence [@mouseover,help,nodead][@player] Plea", -- [2]
+					["PostMacro"] = {
+					},
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["KeyPress"] = {
+					},
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Sequential",
+					["Trinket1"] = false,
+					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["Trinket2"] = false,
+				}, -- [1]
+			},
+			["Icon"] = "Spell_Holy_PowerWordShield",
+			["Author"] = "Me",
+		},
+		["Holy_heal"] = {
+			["Talents"] = "3221122",
+			["Default"] = 1,
+			["Author"] = "Dæmsõn@Draenor",
+			["SpecID"] = 257,
+			["MacroVersions"] = {
+				{
+					"/castsequence [@mouseover,exists,help,nodead][] Renew, Flash Heal, Heal, Heal", -- [1]
+					"/cast [@mouseover,exists,help,nodead] Renew", -- [2]
+					"/cast [@mouseover,exists,help,nodead] Flash Heal", -- [3]
+					"/cast [@mouseover,exists,help,nodead] Heal", -- [4]
+					"/cast [@mouseover,exists,help,nodead] Circle of Healing", -- [5]
+					"/cast [@player] Body and Mind", -- [6]
+					["PostMacro"] = {
+					},
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["KeyRelease"] = {
+					},
+					["KeyPress"] = {
+					},
+					["Trinket1"] = false,
+					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["StepFunction"] = "Sequential",
+				}, -- [1]
+			},
 		},
 		["SPriest_dots"] = {
 			["Talents"] = "?,?,?,?,?,?,?",
 			["Default"] = 1,
+			["Author"] = "Dæmsoñ@Antonidas",
+			["SpecID"] = 258,
+			["Icon"] = "Spell_Shadow_ShadowWordPain",
 			["MacroVersions"] = {
 				{
 					"/cast [@mouseover,harm,nodead] [] Shadow Word: Pain", -- [1]
@@ -1547,9 +1549,10 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["Trinket2"] = true,
-					["Ring2"] = false,
 					["StepFunction"] = "Sequential",
+					["KeyRelease"] = {
+					},
+					["Trinket2"] = true,
 					["PostMacro"] = {
 					},
 					["KeyPress"] = {
@@ -1558,13 +1561,9 @@ GSELibrary = {
 					},
 					["PreMacro"] = {
 					},
-					["KeyRelease"] = {
-					},
+					["Ring2"] = false,
 				}, -- [1]
 			},
-			["Author"] = "Dæmsoñ@Antonidas",
-			["Icon"] = "Spell_Shadow_ShadowWordPain",
-			["SpecID"] = 258,
 		},
 		["Holy_def"] = {
 			["Talents"] = "3231323",
@@ -1598,7 +1597,6 @@ GSELibrary = {
 		["DiscDamage"] = {
 			["Talents"] = "x 3,2,1,1,1,3,1",
 			["Default"] = 1,
-			["SpecID"] = 256,
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling: Penance] Schism", -- [1]
@@ -1625,12 +1623,16 @@ GSELibrary = {
 					["StepFunction"] = "Sequential",
 				}, -- [1]
 			},
-			["Icon"] = "Spell_Holy_PowerWordShield",
 			["Author"] = "Me",
+			["Icon"] = "Spell_Holy_PowerWordShield",
+			["SpecID"] = 256,
 		},
 		["SPriest_heal"] = {
 			["Talents"] = "?,?,?,?,?,?,?",
 			["Default"] = 1,
+			["Author"] = "Dæmsoñ@Antonidas",
+			["SpecID"] = 258,
+			["Icon"] = "Spell_Shadow_ShadowWordPain",
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Shadow Mend", -- [1]
@@ -1654,9 +1656,36 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["Author"] = "Dæmsoñ@Antonidas",
-			["Icon"] = "Spell_Shadow_ShadowWordPain",
-			["SpecID"] = 258,
+		},
+		["Disc_dot"] = {
+			["Talents"] = "3211121",
+			["Default"] = 1,
+			["Author"] = "Dæmsõn@Draenor",
+			["MacroVersions"] = {
+				{
+					"/cast [@mouseover,harm,nodead] Purge the Wicked", -- [1]
+					"/cast [combat][nochanneling: Penance] Power Word: Shield", -- [2]
+					"/cast [nochanneling: Penance] Power Word: Radiance", -- [3]
+					["PostMacro"] = {
+					},
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
+					["Trinket1"] = false,
+					["KeyRelease"] = {
+					},
+					["Trinket2"] = true,
+					["StepFunction"] = "Sequential",
+					["KeyPress"] = {
+						"/targetenemy [noharm] [dead]", -- [1]
+					},
+					["PreMacro"] = {
+					},
+					["Ring2"] = false,
+				}, -- [1]
+			},
+			["SpecID"] = 256,
 		},
 		["Disc_def"] = {
 			["Talents"] = "3211121",
@@ -1678,35 +1707,6 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["KeyRelease"] = {
-					},
-					["KeyPress"] = {
-					},
-					["Trinket1"] = false,
-					["Ring2"] = false,
-					["PreMacro"] = {
-					},
-					["StepFunction"] = "Sequential",
-				}, -- [1]
-			},
-		},
-		["DiscHeal"] = {
-			["Talents"] = " ",
-			["Default"] = 1,
-			["Author"] = "Me",
-			["SpecID"] = 256,
-			["Icon"] = "Spell_Holy_PowerWordShield",
-			["MacroVersions"] = {
-				{
-					"/castsequence [@mouseover,help,nodead][@player] Plea, Shadow Mend, Shadow Mend", -- [1]
-					"/castsequence [@mouseover,help,nodead][@player] Plea", -- [2]
-					["PostMacro"] = {
-					},
-					["Head"] = false,
-					["Neck"] = false,
-					["Belt"] = false,
-					["Ring1"] = false,
-					["Trinket2"] = false,
 					["KeyRelease"] = {
 					},
 					["KeyPress"] = {
@@ -1775,6 +1775,9 @@ GSELibrary = {
 		["SAM_DKunholy"] = {
 			["Talents"] = "2,2,2,1,2,1,3",
 			["Default"] = 1,
+			["SpecID"] = 252,
+			["Author"] = "throwryuken",
+			["Icon"] = "Spell_Deathknight_BloodPresence",
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Raise Dead", -- [1]
@@ -1794,19 +1797,19 @@ GSELibrary = {
 					["KeyRelease"] = {
 						"/startattack", -- [1]
 					},
+					["StepFunciton"] = "Sequential",
 					["PreMacro"] = {
 					},
-					["StepFunciton"] = "Sequential",
 				}, -- [1]
 			},
-			["SpecID"] = 252,
-			["Icon"] = "Spell_Deathknight_BloodPresence",
-			["Author"] = "throwryuken",
 		},
 		["HP_EX_Unholy_M"] = {
 			["Helplink"] = "https://wowlazymacros.com/forums/topic/unholy-soul-reaper-7-1-5/",
 			["Talents"] = "223??23",
 			["Help"] = "Mastery build - Run at 80ms or manually",
+			["Author"] = "Exaria@Perenolde",
+			["SpecID"] = 252,
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/castsequence  reset=target  Festering Strike, Clawing Shadows, Clawing Shadows, Festering Strike, Clawing Shadows, Clawing Shadows", -- [1]
@@ -1829,16 +1832,11 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["Author"] = "Exaria@Perenolde",
-			["Default"] = 1,
-			["SpecID"] = 252,
 		},
 		["SAM_FDK2"] = {
 			["Talents"] = "1,1,1,1,1,3,1",
 			["Default"] = 1,
-			["SpecID"] = 251,
 			["Author"] = "Tazkilla",
-			["Icon"] = "Spell_Deathknight_BloodPresence",
 			["MacroVersions"] = {
 				{
 					"/castsequence  reset=combat  Frost Strike", -- [1]
@@ -1862,14 +1860,14 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
+			["Icon"] = "Spell_Deathknight_BloodPresence",
+			["SpecID"] = 251,
 		},
 		["SAM_BloodDK"] = {
 			["Talents"] = "2,1,1,2,3,3,3",
 			["Default"] = 1,
 			["StepFunction"] = "Priority",
-			["SpecID"] = 250,
 			["Author"] = "Owns",
-			["Icon"] = "Spell_Deathknight_BloodPresence",
 			["MacroVersions"] = {
 				{
 					"/cast Marrowrend", -- [1]
@@ -1890,11 +1888,16 @@ GSELibrary = {
 					["StepFunction"] = "Sequential",
 				}, -- [1]
 			},
+			["Icon"] = "Spell_Deathknight_BloodPresence",
+			["SpecID"] = 250,
 		},
 		["HP_SquishyDK"] = {
 			["Talents"] = "2,1,1,2,1,3,3",
 			["Help"] = "Talents: 2112133",
 			["StepFunction"] = "Priority",
+			["SpecID"] = 250,
+			["Author"] = "Suiseiseki",
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast [combat] Consumption", -- [1]
@@ -1913,9 +1916,6 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 250,
-			["Default"] = 1,
-			["Author"] = "Suiseiseki",
 		},
 	}, -- [6]
 	{
@@ -1923,6 +1923,9 @@ GSELibrary = {
 			["Talents"] = "3,2,1,3,1,1,2",
 			["Help"] = "Talents are 3213112",
 			["StepFunction"] = "Priority",
+			["Author"] = "Rocktris",
+			["SpecID"] = 263,
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/cast Stormstrike", -- [1]
@@ -1939,9 +1942,6 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["Author"] = "Rocktris",
-			["Default"] = 1,
-			["SpecID"] = 263,
 		},
 	}, -- [7]
 	{
@@ -1958,11 +1958,11 @@ GSELibrary = {
 					},
 					["KeyPress"] = {
 					},
+					["KeyRelease"] = {
+					},
 					["PreMacro"] = {
 					},
 					["StepFunciton"] = "Sequential",
-					["KeyRelease"] = {
-					},
 				}, -- [1]
 			},
 		},
@@ -1970,12 +1970,12 @@ GSELibrary = {
 			["Talents"] = "1133123",
 			["Default"] = 1,
 			["Author"] = "Switchtarget@Antonidas",
+			["SpecID"] = 63,
 			["MacroVersions"] = {
 				{
 					"/cast Pyroblast", -- [1]
 					"/cast Fire blast", -- [2]
 					"/cast phoenix's Flames", -- [3]
-					"/cast Pyroblast", -- [4]
 					["Trinket1"] = false,
 					["Head"] = false,
 					["Neck"] = false,
@@ -1985,40 +1985,46 @@ GSELibrary = {
 					},
 					["StepFunciton"] = "Sequential",
 					["Ring2"] = false,
-					["StepFunction"] = "Sequential",
+					["StepFunction"] = "Priority",
 					["PostMacro"] = {
 					},
-					["Trinket2"] = false,
+					["Trinket2"] = true,
 					["PreMacro"] = {
 					},
 					["KeyRelease"] = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 63,
 		},
 		["FMage_stn"] = {
 			["Talents"] = "1133123",
 			["Default"] = 1,
 			["Author"] = "Switchtarget@Antonidas",
-			["SpecID"] = 63,
 			["MacroVersions"] = {
 				{
-					"/cast Frost Nova", -- [1]
-					"/cast Dragon's Breath", -- [2]
+					"/cast Dragon's Breath", -- [1]
+					"/cast Frost Nova", -- [2]
 					"/cast Polymorph", -- [3]
 					"/cast Blazing Barrier", -- [4]
+					["Trinket1"] = false,
+					["Head"] = false,
+					["Neck"] = false,
+					["Belt"] = false,
+					["Ring1"] = false,
 					["PostMacro"] = {
-					},
-					["KeyPress"] = {
 					},
 					["KeyRelease"] = {
 					},
-					["StepFunciton"] = "Sequential",
+					["KeyPress"] = {
+					},
 					["PreMacro"] = {
 					},
+					["StepFunction"] = "Sequential",
+					["StepFunciton"] = "Sequential",
+					["Ring2"] = false,
 				}, -- [1]
 			},
+			["SpecID"] = 63,
 		},
 		["FMage_spd"] = {
 			["Talents"] = "1133123",
@@ -2029,23 +2035,23 @@ GSELibrary = {
 				{
 					"/cast Shimmer", -- [1]
 					"/cast Darkflight", -- [2]
-					["PostMacro"] = {
-					},
+					["Trinket1"] = false,
 					["Head"] = false,
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["Trinket1"] = false,
-					["PreMacro"] = {
-					},
+					["Trinket2"] = false,
+					["StepFunciton"] = "Sequential",
 					["KeyRelease"] = {
 					},
 					["KeyPress"] = {
 					},
-					["Ring2"] = false,
 					["StepFunction"] = "Sequential",
-					["StepFunciton"] = "Sequential",
-					["Trinket2"] = false,
+					["Ring2"] = false,
+					["PreMacro"] = {
+					},
+					["PostMacro"] = {
+					},
 				}, -- [1]
 			},
 		},
@@ -2055,30 +2061,31 @@ GSELibrary = {
 			["Author"] = "Unknown Author",
 			["MacroVersions"] = {
 				{
-					"/cast scorch", -- [1]
-					"/cast Fire blast", -- [2]
-					"/cast Fireball", -- [3]
-					"/cast phoenix's Flames", -- [4]
-					"/cast living bomb", -- [5]
-					"/cast blazing barrier", -- [6]
-					["PostMacro"] = {
-					},
+					"/castsequence [no channeling] Fireball, Fireball", -- [1]
+					"/cast Phoenix's Flames", -- [2]
+					"/castsequence [no channeling] Fire Blast, Fire Blast, Fire Blast", -- [3]
+					"/castsequence [no channeling] Fireball, Fireball", -- [4]
+					"/cast [no channeling] Fireball", -- [5]
+					"/cast [no channeling] Scorch", -- [6]
+					"/cast blazing barrier", -- [7]
+					["Trinket1"] = false,
 					["Head"] = false,
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["Trinket2"] = true,
-					["PreMacro"] = {
+					["PostMacro"] = {
 					},
+					["StepFunciton"] = "Sequential",
 					["KeyRelease"] = {
 					},
 					["KeyPress"] = {
 						"/targetenemy [noharm][dead]", -- [1]
 					},
-					["StepFunction"] = "Sequential",
 					["Ring2"] = false,
-					["StepFunciton"] = "Sequential",
-					["Trinket1"] = false,
+					["StepFunction"] = "Sequential",
+					["PreMacro"] = {
+					},
+					["Trinket2"] = true,
 				}, -- [1]
 			},
 			["Icon"] = "Spell_Fire_FireBolt02",
@@ -2102,11 +2109,11 @@ GSELibrary = {
 					},
 					["KeyPress"] = {
 					},
-					["Trinket1"] = false,
+					["StepFunction"] = "Sequential",
 					["Ring2"] = false,
 					["PreMacro"] = {
 					},
-					["StepFunction"] = "Sequential",
+					["Trinket1"] = false,
 				}, -- [1]
 			},
 		},
@@ -2116,6 +2123,9 @@ GSELibrary = {
 			["Helplink"] = "https://wowlazymacros.com/forums/topic/demonology-synergy/",
 			["Talents"] = "3,1,?,1,?,2,2",
 			["Help"] = "Single Target - Run at 80ms or manually",
+			["Author"] = "Exlynn@Perenolde",
+			["SpecID"] = 266,
+			["Default"] = 1,
 			["MacroVersions"] = {
 				{
 					"/castsequence [nochanneling] Demonbolt, Call Dreadstalkers, Demonic Empowerment, Life Tap", -- [1]
@@ -2141,16 +2151,11 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["Author"] = "Exlynn@Perenolde",
-			["Default"] = 1,
-			["SpecID"] = 266,
 		},
 		["SAM_AFF"] = {
 			["Talents"] = "3,1,3,1,2,1,2",
 			["Default"] = 1,
-			["SpecID"] = 265,
 			["Author"] = "Jimmy",
-			["Icon"] = "Spell_Shadow_RainOfFire",
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Agony", -- [1]
@@ -2173,13 +2178,13 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
+			["Icon"] = "Spell_Shadow_RainOfFire",
+			["SpecID"] = 265,
 		},
 		["SAM_Demon"] = {
 			["Talents"] = "3,2,1,2,2,1,3",
 			["Default"] = 1,
-			["SpecID"] = 266,
 			["Author"] = "Jimmy",
-			["Icon"] = "Spell_Shadow_RainOfFire",
 			["MacroVersions"] = {
 				{
 					"/castsequence [nochanneling] Doom,Demonic Empowerment,Demonwrath", -- [1]
@@ -2201,6 +2206,8 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
+			["Icon"] = "Spell_Shadow_RainOfFire",
+			["SpecID"] = 266,
 		},
 		["HP_EX_Aff_ST"] = {
 			["Helplink"] = "https://wowlazymacros.com/forums/topic/affliction-conduit-7-1-5/",
@@ -2208,6 +2215,8 @@ GSELibrary = {
 			["Default"] = 1,
 			["Help"] = "Single Target - Run at 80ms or manually",
 			["Author"] = "Exlynn@Perenolde with help from Belthozar@Pozzo dell'Eternità",
+			["SpecID"] = 265,
+			["Icon"] = "Spell_Shadow_DeathCoil",
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Unstable Affliction", -- [1]
@@ -2250,8 +2259,6 @@ GSELibrary = {
 					},
 				}, -- [2]
 			},
-			["Icon"] = "Spell_Shadow_DeathCoil",
-			["SpecID"] = 265,
 		},
 		["HP_EX_Aff_AoE"] = {
 			["Helplink"] = "https://wowlazymacros.com/forums/topic/affliction-conduit-7-1-5/",
@@ -2300,16 +2307,14 @@ GSELibrary = {
 					},
 				}, -- [2]
 			},
-			["SpecID"] = 265,
-			["Icon"] = "Spell_Shadow_DeathCoil",
 			["Author"] = "Exlynn@Perenolde",
+			["Icon"] = "Spell_Shadow_DeathCoil",
+			["SpecID"] = 265,
 		},
 		["SAM_AFF2"] = {
 			["Talents"] = "3,1,3,1,2,1,2",
 			["Default"] = 1,
-			["SpecID"] = 265,
 			["Author"] = "Jimmy",
-			["Icon"] = "Spell_Shadow_RainOfFire",
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Agony", -- [1]
@@ -2333,13 +2338,13 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
+			["Icon"] = "Spell_Shadow_RainOfFire",
+			["SpecID"] = 265,
 		},
 		["SAM_DemoAoE"] = {
 			["Talents"] = "Talents: 1111222",
 			["Default"] = 1,
-			["Author"] = "twitch.tv/Seydon",
 			["SpecID"] = 266,
-			["Icon"] = "Spell_Warlock_HandofGul'dan",
 			["MacroVersions"] = {
 				{
 					"/castsequence [combat] Call Dreadstalkers, Demonic Empowerment", -- [1]
@@ -2363,6 +2368,8 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
+			["Icon"] = "Spell_Warlock_HandofGul'dan",
+			["Author"] = "twitch.tv/Seydon",
 		},
 		["Havoc"] = {
 			["Talents"] = "1132211",
@@ -2379,16 +2386,16 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["Trinket2"] = false,
-					["KeyRelease"] = {
-					},
 					["KeyPress"] = {
 					},
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Sequential",
 					["Trinket1"] = false,
 					["Ring2"] = false,
 					["PreMacro"] = {
 					},
-					["StepFunction"] = "Sequential",
+					["Trinket2"] = false,
 				}, -- [1]
 			},
 		},
@@ -2418,16 +2425,14 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 266,
-			["Icon"] = "INV_MISC_QUESTIONMARK",
 			["Author"] = "Exlynn@Perenolde",
+			["Icon"] = "INV_MISC_QUESTIONMARK",
+			["SpecID"] = 266,
 		},
 		["SAM_Destro"] = {
 			["Talents"] = "1,1,1,2,2,1,3",
 			["Default"] = 1,
-			["SpecID"] = 267,
 			["Author"] = "Jimmy",
-			["Icon"] = "Spell_Shadow_RainOfFire",
 			["MacroVersions"] = {
 				{
 					"/cast [nochanneling] Conflagrate", -- [1]
@@ -2451,13 +2456,13 @@ GSELibrary = {
 					["Ring2"] = false,
 				}, -- [1]
 			},
+			["Icon"] = "Spell_Shadow_RainOfFire",
+			["SpecID"] = 267,
 		},
 		["SAM_DemoSingle"] = {
 			["Talents"] = "1,1,1,1,2,2,2",
 			["Default"] = 1,
-			["Author"] = "twitch.tv/Seydon",
 			["SpecID"] = 266,
-			["Icon"] = "Spell_Warlock_Demonbolt",
 			["MacroVersions"] = {
 				{
 					"/castsequence [combat] Call Dreadstalkers, Demonic Empowerment", -- [1]
@@ -2482,6 +2487,8 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
+			["Icon"] = "Spell_Warlock_Demonbolt",
+			["Author"] = "twitch.tv/Seydon",
 		},
 		["AFF_dots"] = {
 			["Talents"] = "3121113",
@@ -2498,17 +2505,17 @@ GSELibrary = {
 					["Neck"] = false,
 					["Belt"] = false,
 					["Ring1"] = false,
-					["Trinket2"] = false,
-					["KeyRelease"] = {
-					},
 					["KeyPress"] = {
 						"/targetenemy [noharm][dead]", -- [1]
 					},
+					["KeyRelease"] = {
+					},
+					["StepFunction"] = "Sequential",
 					["Trinket1"] = false,
 					["Ring2"] = false,
 					["PreMacro"] = {
 					},
-					["StepFunction"] = "Sequential",
+					["Trinket2"] = false,
 				}, -- [1]
 			},
 			["SpecID"] = 265,
@@ -2519,6 +2526,9 @@ GSELibrary = {
 		["SAM_Feral-AoE"] = {
 			["Talents"] = "2,2,3,1,1,2,3",
 			["Default"] = 1,
+			["SpecID"] = 103,
+			["Author"] = "Jimmy www.wowlazymacros.com",
+			["Icon"] = "Spell_Nature_StarFall",
 			["MacroVersions"] = {
 				{
 					"/castsequence [combat,nostealth] Thrash,Swipe,Swipe,Thrash,Swipe,Rip", -- [1]
@@ -2540,13 +2550,13 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 103,
-			["Icon"] = "Spell_Nature_StarFall",
-			["Author"] = "Jimmy www.wowlazymacros.com",
 		},
 		["SAM_Boomer"] = {
 			["Talents"] = "2,3,2,3,1,1,2",
 			["Default"] = 1,
+			["SpecID"] = 102,
+			["Author"] = "TimothyLuke",
+			["Icon"] = "Spell_Nature_StarFall",
 			["MacroVersions"] = {
 				{
 					"/cast Moonfire", -- [1]
@@ -2567,13 +2577,13 @@ GSELibrary = {
 					["StepFunction"] = "Sequential",
 				}, -- [1]
 			},
-			["SpecID"] = 102,
-			["Icon"] = "Spell_Nature_StarFall",
-			["Author"] = "TimothyLuke",
 		},
 		["SAM_KTNDRUHEALS"] = {
 			["Talents"] = "2,1,1,3,1,1,2",
 			["Default"] = 1,
+			["SpecID"] = 105,
+			["Author"] = "KTN",
+			["Icon"] = "Spell_Nature_StarFall",
 			["MacroVersions"] = {
 				{
 					"/castsequence [@focus] reset=15/combat Lifebloom, Regrowth, Rejuvenation", -- [1]
@@ -2593,13 +2603,13 @@ GSELibrary = {
 					["StepFunction"] = "Sequential",
 				}, -- [1]
 			},
-			["SpecID"] = 105,
-			["Icon"] = "Spell_Nature_StarFall",
-			["Author"] = "KTN",
 		},
 		["SAM_Bear"] = {
 			["Talents"] = "2,3,3,1,1,1,1",
 			["Default"] = 1,
+			["SpecID"] = 104,
+			["Author"] = "John Mets www.wowlazymacros.com",
+			["Icon"] = "Spell_Nature_StarFall",
 			["MacroVersions"] = {
 				{
 					"/castsequence reset=combat Thrash, Moonfire, Maul, Swipe", -- [1]
@@ -2627,13 +2637,13 @@ GSELibrary = {
 					["StepFunction"] = "Priority",
 				}, -- [1]
 			},
-			["SpecID"] = 104,
-			["Icon"] = "Spell_Nature_StarFall",
-			["Author"] = "John Mets www.wowlazymacros.com",
 		},
 		["SAM_Feral-ST"] = {
 			["Talents"] = "2,2,3,1,1,2,3",
 			["Default"] = 1,
+			["SpecID"] = 103,
+			["Author"] = "Jimmy www.wowlazymacros.com",
+			["Icon"] = "Spell_Nature_StarFall",
 			["MacroVersions"] = {
 				{
 					"/castsequence [combat,nostealth] Rake,Shred,Shred,Rake,Shred,Rip", -- [1]
@@ -2655,15 +2665,12 @@ GSELibrary = {
 					},
 				}, -- [1]
 			},
-			["SpecID"] = 103,
-			["Icon"] = "Spell_Nature_StarFall",
-			["Author"] = "Jimmy www.wowlazymacros.com",
 		},
 		["SAM_druid_bala_st"] = {
 			["Talents"] = "3,3,3,3,1,3,2",
 			["Help"] = "CTRL Blessing of the Ancients, Shift Celestial Alignment, Alt Solar Beam",
-			["SpecID"] = 102,
 			["Author"] = "someone",
+			["SpecID"] = 102,
 			["MacroVersions"] = {
 				{
 					"/castsequence reset=target Sunfire,null", -- [1]
@@ -2710,10 +2717,10 @@ GSELibrary = {
 					},
 					["KeyPress"] = {
 					},
-					["KeyRelease"] = {
+					["PreMacro"] = {
 					},
 					["StepFunciton"] = "Sequential",
-					["PreMacro"] = {
+					["KeyRelease"] = {
 					},
 				}, -- [1]
 			},
